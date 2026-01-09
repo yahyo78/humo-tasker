@@ -64,9 +64,10 @@ const TaskForm = () => {
           {/* DESCRIPTION */}
           <div>
             <Textarea
+              rows={3}
               {...register("description")}
               placeholder="Description"
-              className="w-full font-bold resize-none"
+              className="w-full overflow-y-auto max-h-[72px] font-bold resize-none"
             />
             {errors.description && (
               <p className="text-red-500 text-sm mt-1">
