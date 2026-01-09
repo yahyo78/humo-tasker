@@ -16,9 +16,9 @@ const CardTask = ({ task }) => {
   };
 
   return (
-    <div className="border-2 border-[#ff8000] rounded-[10px] flex flex-col gap-[10px] p-[20px] xl:w-[600px] w-[90%]">
+    <div className="border-2 border-[#ff8000] rounded-[10px] flex flex-col gap-[10px] p-[20px]  w-full">
       <div className="flex items-center gap-[20px]">
-        <button className="cursor-pointer" onClick={changeStatusFunc}>
+        <button className="cursor-pointer transition-all duration-300" onClick={changeStatusFunc}>
           {task.status ? (
             <CircleCheck size={40} className="text-green-600" />
           ) : (

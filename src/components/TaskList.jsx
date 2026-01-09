@@ -20,7 +20,7 @@ const TaskList = () => {
         <h1 className=" text-[30px] font-bold py-[10px]">Tasks List</h1>
         <AddDialog open={open} setOpen={setOpen} />
       </div>
-      <div className="flex-1 overflow-y-auto py-[30px] gap-[15px] flex flex-col items-center">
+      <div className="flex-1 xl:px-0 px-[20px] overflow-y-auto py-[30px] gap-[15px] flex flex-col items-center">
         {taskData?.length < 1 ? (
           <p className="mt-[200px] font-bold text-2xl text-[#ff8000]">Айни Хол Task надоред !</p>
         ) : (
